@@ -1,0 +1,14 @@
+body .box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background-color: darkgray;
+  padding-left: 10px; }
+
+.app {
+  font-family: cursive;
+  color: #00ffff;
+  background-color: gray; }
+
+/*# sourceMappingURL=app.css.map */

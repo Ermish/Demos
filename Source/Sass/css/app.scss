@@ -1,6 +1,29 @@
+$color : #00ffff;
+$className : ".app";
+$radiusAmount : 10px * 2;
 
 
-.app{
+@mixin grayBackground{
+    background-color: gray;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+body {
+    .box {
+        @include border-radius($radiusAmount);
+        background-color: darkgray;
+        padding-left: 10px;
+    }
+}
+
+#{$className} {
     font-family: cursive;
-    color: aqua;
+    color: $color;
+    @include grayBackground;
 }
