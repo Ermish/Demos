@@ -1,0 +1,17 @@
+{
+  "name": "Ermish.Demos.Polymer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Ermish/Demos/Polymer",
+  "authors": [
+    "Ermish <philip@ermish.com>"
+  ],
+  "description": "Polymer Demo",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
