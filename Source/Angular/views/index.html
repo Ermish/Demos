@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="store">
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <title></title>
 
-    <link rel="stylesheet" href="../app/vendor/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../app/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
 
+    <script src="../app/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../app/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../app/vendor/angular/angular.js"></script>
-    <script src="../app/vendor/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="../app/modules/app.js"></script>
 </head>
 
 <body>
-    <div class="well well-lg">
-        {{'HAI GAIZ!'}}
+    <div class="container" ng-controller="StoreController as store">
+        <div class="product well">
+            <!--Expression Example-->
+            {{ 'Listing Example' }}
+
+            <h1>{{ store.product.name}}</h1>
+            <h2>{{store.product.price}}</h2>
+            <p>{{store.product.description}}</p>
+
+        </div>
     </div>
 </body>
 </html>
